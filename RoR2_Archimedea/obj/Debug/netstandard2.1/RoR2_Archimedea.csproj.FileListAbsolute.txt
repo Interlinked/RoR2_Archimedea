@@ -1,0 +1,14 @@
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Archimedea.csproj.AssemblyReference.cache
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Archimedea.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Archimedea.AssemblyInfoInputs.cache
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Archimedea.AssemblyInfo.cs
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Archimedea.csproj.CoreCompileInputs.cache
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Archimedea.sourcelink.json
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\bin\Debug\netstandard2.1\RoR2_Archimedea.deps.json
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\bin\Debug\netstandard2.1\RoR2_Archimedea.dll
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\bin\Debug\netstandard2.1\RoR2_Archimedea.pdb
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\bin\Debug\netstandard2.1\Decalicious.dll
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\bin\Debug\netstandard2.1\Unity.Postprocessing.Runtime.dll
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Arc.2AA3645E.Up2Date
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Archimedea.dll
+C:\Users\enbro\.vscode\RoR2_Archimedea\RoR2_Archimedea\obj\Debug\netstandard2.1\RoR2_Archimedea.pdb
