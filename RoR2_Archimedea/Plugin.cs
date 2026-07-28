@@ -13,6 +13,7 @@ using System.Linq;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+using RoR2_Archimedea.Gamemode;
 
 namespace RoR2_Archimedea {
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
@@ -26,12 +27,9 @@ namespace RoR2_Archimedea {
         public void Awake() {
             // set logger
             ModLogger = Logger;
-            On.RoR2.UI.MainMenu.Awake += loadArchimedeaUI;
+            UI.Init();
             ConfigManager.HandleConfigAttributes(typeof(RoR2_Archimedea).Assembly, Config);
         }
-        public void loadArchimedeaUI(On.RoR2.UI.MainMenu.orig_Awake orig, MainMenu self) {
-            orig(self);
-            mainMenu = self;
-        }
+        
     }
 }

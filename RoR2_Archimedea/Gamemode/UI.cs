@@ -21,9 +21,20 @@ namespace RoR2_Archimedea.Gamemode {
                 if (buttonTransform)
                 {
                     GameObject button = UnityEngine.Object.Instantiate(buttonTransform.gameObject, buttonTransform.parent);
-                    button.GetComponent<
+                    button.GetComponent<LanguageTextMeshController>().token = "ARCHIMEDEA_MENU_NAME";
+                    ConsoleFunctions consoleFunctions = button.GetComponent<ConsoleFunctions>();
+                    HGButton component = button.GetComponent<HGButton>();
+                    component.hoverToken = "ARCHIMEDEA_HOVERDESC";
+                    component.onClick.RemoveAllListeners();
+                    component.onClick.AddListener(delegate
+                    {
+                        consoleFunctions.SubmitCmd("transition_command \"gamemode Archimedea; host 0;\"");
+                    });
                
-                }           
+                }  else
+                {
+                    Debug.LogError("Could not find transform");
+                }         
             }
         }
 }       
