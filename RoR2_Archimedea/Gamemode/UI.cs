@@ -12,6 +12,19 @@ namespace RoR2_Archimedea.Gamemode {
             SceneManager.activeSceneChanged += OnSceneChanged;
             
         }
-       
-}
+        public static void OnSceneChanged(Scene prev, Scene next)
+        {
+            if (next.name == "title")
+            {
+                GameObject menu = GameObject.Find("MainMenu");
+                Transform buttonTransform = menu.transform.Find("MENU: Extra Game Mode/ExtraGameModeMenu/Main Panel/GenericMenuButtonPanel/JuicePanel/GenericMenuButton (Eclipse)");
+                if (buttonTransform)
+                {
+                    GameObject button = UnityEngine.Object.Instantiate(buttonTransform.gameObject, buttonTransform.parent);
+                    button.GetComponent<
+               
+                }           
+            }
+        }
+}       
 }
