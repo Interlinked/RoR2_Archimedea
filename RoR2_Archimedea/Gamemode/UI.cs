@@ -10,7 +10,20 @@ namespace RoR2_Archimedea.Gamemode {
             "ARCHIMEDEA_HOVERDESC".Add("Play a unique, difficult run with a random survivor and random modifiers.");
 
             SceneManager.activeSceneChanged += OnSceneChanged;
-            
+            On.RoR2.ConsoleFunctions.SubmitCmd += (orig, self, cmd) =>
+            {
+                if(self.GetComponent<HGButton>() && self.GetComponent<HGButton>().hoverToken == "ARCHIMEDEA_HOVERDESC")
+                {
+                    if(cmd == "transition_command \"gamemode Archimedea; host 0;\"")
+                    {
+                       orig(self,cmd);
+
+                    }
+                } else
+                {
+                    orig(self,cmd);
+                }
+            };
         }
         public static void OnSceneChanged(Scene prev, Scene next)
         {

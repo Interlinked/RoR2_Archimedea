@@ -1,3 +1,4 @@
+global using static RoR2_Archimedea.RoR2_Archimedea;
 using BepInEx;
 using RoR2;
 using UnityEngine;
@@ -14,6 +15,7 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using RoR2_Archimedea.Gamemode;
+using R2API;
 
 namespace RoR2_Archimedea {
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
@@ -27,9 +29,15 @@ namespace RoR2_Archimedea {
         public void Awake() {
             // set logger
             ModLogger = Logger;
-            UI.Init();
+            Gamemode.ArchimedeaGamemode.Create();
+            ContentAddition.AddGameMode(ArchimedeaGamemode.ArchimedeaPrefab, "A unique, warframe-inspired gamemode where you undertake a difficult run with a random survivor and random modifiers.");
+
             ConfigManager.HandleConfigAttributes(typeof(RoR2_Archimedea).Assembly, Config);
+        
+        
         }
+         
+            
         
     }
 }
