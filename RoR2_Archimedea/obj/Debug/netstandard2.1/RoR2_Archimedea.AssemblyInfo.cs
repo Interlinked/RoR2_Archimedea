@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RoR2_Archimedea")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ba75a28b807ae98300e455e290b466a408d90a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13ec2564221d178f6ad2df4ba13d64f53333e569")]
 [assembly: System.Reflection.AssemblyProductAttribute("RoR2_Archimedea")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RoR2_Archimedea")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
