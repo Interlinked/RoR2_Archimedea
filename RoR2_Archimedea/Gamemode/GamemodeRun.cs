@@ -10,8 +10,7 @@ namespace GamemodeRun.Gamemode
     {
        public override void Start()
         {
-            base.seed = GenerateSeedForNewRun() / 2; 
-            ModLogger.LogInfo($"ArchimedeaRun: Starting run with seed {base.seed}");
+            
             base.Start();
         }
     }

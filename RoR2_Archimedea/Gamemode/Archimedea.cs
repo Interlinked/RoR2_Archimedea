@@ -1,6 +1,7 @@
 using System;
 using R2API;
 using GamemodeRun.Gamemode;
+using R2API.Utils;
 namespace RoR2_Archimedea.Gamemode {
     public static class ArchimedeaGamemode {
         public static GameObject ArchimedeaPrefab;
@@ -16,6 +17,7 @@ namespace RoR2_Archimedea.Gamemode {
             run.nameToken = "Archimedea";
             run.gameOverPrefab = classic.GetComponent<Run>().gameOverPrefab;
             run.startingSceneGroup = classic.GetComponent<Run>().startingSceneGroup;
+            run.seed = classic.GetComponent<Run>().GenerateSeedForNewRun() / 2;
             UI.Init();
         }
     }
