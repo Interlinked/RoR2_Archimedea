@@ -9,7 +9,7 @@ namespace RoR2_Archimedea.Gamemode {
         {
             ArchimedeaPrefab = PrefabAPI.InstantiateClone(new("ArchimedeaRunObj"), "ArchimedeaRunObj");
             GameObject classic = Paths.GameObject.ClassicRun;
-
+            GameObject weekly = Paths.GameObject.WeeklyRun;
             ArchimedeaRun run = ArchimedeaPrefab.AddComponent<ArchimedeaRun>();
             run.lobbyBackgroundPrefab = classic.GetComponent<Run>().lobbyBackgroundPrefab;
             run.uiPrefab = classic.GetComponent<Run>().uiPrefab;
@@ -17,8 +17,18 @@ namespace RoR2_Archimedea.Gamemode {
             run.nameToken = "Archimedea";
             run.gameOverPrefab = classic.GetComponent<Run>().gameOverPrefab;
             run.startingSceneGroup = classic.GetComponent<Run>().startingSceneGroup;
-            run.seed = classic.GetComponent<Run>().GenerateSeedForNewRun() / 2;
+            run._seed = weekly.GetComponent<WeeklyRun>().seed / 2;
+            
             ModLogger.LogInfo("Archimedea gamemode created");
+
+            ArchimedeaPrefab.AddComponent<NetworkIdentity>();
+            
+            ArchimedeaPrefab.AddComponent<DirectorCore>();
+
+            ArchimedeaPrefab.AddComponent<TeamManager>();
+            ArchimedeaPrefab.AddComponent<NetworkRuleBook>();
+            ArchimedeaPrefab.AddComponent<RunCameraManager>();
+
             UI.Init();
         }
     }
