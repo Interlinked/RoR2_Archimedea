@@ -17,7 +17,7 @@ namespace RoR2_Archimedea.Gamemode {
             run.nameToken = "Archimedea";
             run.gameOverPrefab = classic.GetComponent<Run>().gameOverPrefab;
             run.startingSceneGroup = classic.GetComponent<Run>().startingSceneGroup;
-            run._seed = weekly.GetComponent<WeeklyRun>().seed / 2;
+            run.seed = weekly.GetComponent<Run>().GenerateSeedForNewRun() / 2;
             
             ModLogger.LogInfo("Archimedea gamemode created");
 
